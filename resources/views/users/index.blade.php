@@ -29,7 +29,7 @@
                         @endif
 
                         <form action="{{ route('users.store') }} " method="POST">
-                            <div class="form-row">
+                            <div class="form row g-3">
                                 <div class="col-sm-3">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" value="{{ old('name') }}">
                                 </div>
@@ -41,14 +41,14 @@
                                 </div>
                                 <div class="col-auto">
                                     @csrf
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                    <button type="submit" class="btn btn-success">Enviar</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
 
-                <table class="table">
+                <table class="table table-dark table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>
